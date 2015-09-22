@@ -1,4 +1,4 @@
 # HelloGit
-This is just a test.
 
-Hello Git.
+This is a tutorial on how to use Git with GitHub.
+
