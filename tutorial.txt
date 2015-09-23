@@ -1,8 +1,15 @@
-why push does not work?
 
-change
-mdfie
-nfiejf
-jfiejfei
+1. create a repo in github, say HelloGit
 
-Finally, this works!!!
+2. checkout the project from github to your PC with the
+following command:
+   git clone https://github.com/github_username/HelloGit.git
+
+3. create new files
+
+4. git add files
+
+5. git commit -m "your message". If commit modified files,
+the -a option should be used, namely, git commit -am "your message"
+
+6. git push origin master or other branches
