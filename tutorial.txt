@@ -1,4 +1,4 @@
-
+### Begin with creating a repo from github first####
 1. create a repo in github, say HelloGit
 
 2. checkout the project from github to your PC with the
@@ -13,3 +13,23 @@ following command:
 the -a option should be used, namely, git commit -am "your message"
 
 6. git push origin master or other branches
+
+## Adding an existing project to GitHub using the command line###
+1. Create a new repo in github
+
+2. Change the current working directory to the local project in PC
+
+3. Initialize the local directory as a Git repository
+   git init
+   
+4. Add the files in your new local repository. This stages them for the first commit.
+   git add .
+
+5. Commit the files that you've staged in your local repository.
+   git commit -m "first commit"
+
+6. Add the URL for the remote repository where your local repository will be pushed
+   git remote add origin remote_repo_URL
+   
+7. Push the changes in your local repository to GitHub
+   git push -u origin master
