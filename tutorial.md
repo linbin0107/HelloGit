@@ -1,4 +1,4 @@
-### Begin with creating a repo from github first####
+# Begin with creating a repo from github first
 1. create a repo in github, say HelloGit
 
 2. checkout the project from github to your PC with the
@@ -15,7 +15,7 @@ the -a option should be used, namely, git commit -am "your message"
 6. git push origin master or other branches
 
 
-### Adding an existing project to GitHub using the command line###
+# Adding an existing project to GitHub using the command line
 1. Create a new repo in github
 
 2. Change the current working directory to the local project in PC
@@ -36,32 +36,28 @@ the -a option should be used, namely, git commit -am "your message"
    git push -u origin master
    
    
-### Keep the forked repo update with the original repo (called "upstream")
+# Keep the forked repo update with the original repo (called "upstream")
 
-# Add the remote, call it "upstream"
+1. Add the remote, call it "upstream":
 
 git remote add upstream https://github.com/whoever/whatever.git
 
-# Fetch all the branches of that remote into remote-tracking branches,
-# such as upstream/master:
+2. Fetch all the branches of that remote into remote-tracking branches, such as upstream/master:
 
 git fetch upstream
 
-# Make sure that you're on your master branch:
+3. Make sure that you're on your master branch:
 
 git checkout master
 
-# Rewrite your master branch so that any commits of yours that
-# aren't already in upstream/master are replayed on top of that
-# other branch:
+4. Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
 
 git rebase upstream/master
 
-# If you don't want to rewrite the history of your master branch,
-# then you should replace the last command with
+5. If you don't want to rewrite the history of your master branch, then you should replace the last command with
 
 git merge upstream/master
 
-# force the push in order to push it to your own forked repository on GitHub
+6. Force the push in order to push it to your own forked repository on GitHub:
 
 git push -f origin master
